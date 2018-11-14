@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="./assets/imgs/timePreto.png" class="tam_img_logo">
+  <div class="div_func">
+    <h2 class="letra_fun letraBold "> Horário de<br> Funcionamento: </h2>
+    <p class="letra_sem">Segunda à sexta</p>
+    <p class="letra_horas h_Fun">08:30 ás 12:00 Horas</p>
+    <p class="letra_horas h_Fun">13:30 ás 18:30 Horas</p>
+  </div>
+  <div class="div_entrega">
+    <h2 class=" letra_fun letraBold"> Horário de<br> Entrega: </h2>
+    <p class="letra_sem">Segunda à sexta</p>
+    <p class="letra_horas h_Fun">10:00 ás 12:00 Horas</p>
+    <p class="letra_horas h_Fun">12:30 ás 17:00 Horas</p>
+  </div>
+
+  <!-- Slides -->
+  <ion-slides class="image-slider" loop="true" slidesPerView="1" initialSlide=0 loop=true autoplay=100 speed=4000>
+    <ion-slide *ngFor="let img of images">
+      <img src="./assets/imgs/{{img}}" #myImage (click)="presentImage(myImage)" class="thumb-img" imageViewer />
+    </ion-slide>
+  </ion-slides>
+
+  <div class="swiper-button-next" color="dark" (click)="slideNext()"></div> <!-- swiper-button-white -->
+  <div class="swiper-button-prev" color="corPrincipal" (click)="slidePrev()"></div>
+
+
+  <!-- ----- --->
+  <ion-segment [(ngModel)]="pet" class="posicaoMenuMais">
+    <ion-segment-button value="kittens" class="letraBold">
+      <div class="corMenuOpcoes">Mais pedidos</div>
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      <div class="corMenuOpcoes">Linha de Produtos</div>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="">
+    <ion-card>
+      <ion-card-content>
+        <h2>Brownie com cerveja Stout.</h2>
+        <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda,
+          a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+        <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a
+          espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="">
+    <ion-card>
+      <ion-card-content>
+        <h2>Brownie com cerveja Stout.</h2>
+        <p>A cerveja Stout harmoniza perfeitamente com uma sobremesa à base de chocolate. E agora melhor ainda,
+          a Break Brownie incorporou numa versão de brownie da linha Break Bar!</p>
+        <p>A Stout possui coloração escura e forte aroma de café e chocolate. Produzida com malte torrado, tem a
+          espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

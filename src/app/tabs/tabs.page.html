@@ -1,0 +1,53 @@
+<ion-tabs>
+
+  <ion-tab tab="inicio">
+    <ion-router-outlet name="inicio"></ion-router-outlet>
+  </ion-tab>
+  
+  <ion-tab tab="novidades">
+    <ion-router-outlet name="novidades"></ion-router-outlet>
+  </ion-tab>
+  
+  <ion-tab tab="cardapio">
+    <ion-router-outlet name="cardapio"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="carrinho">
+    <ion-router-outlet name="carrinho"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="menu">
+    <ion-router-outlet name="menu"></ion-router-outlet>
+  </ion-tab>
+
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button tab="inicio" href="/tabs/(inicio:inicio)">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="novidades" href="/tabs/(novidades:novidades)">
+      <ion-icon name="paper" tabBadge="1" tabBadgeStyle="danger"></ion-icon>
+      <ion-label>Novidades</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="cardapio" href="/tabs/(cardapio:cardapio)">
+      <ion-icon name="phone-portrait"></ion-icon>
+      <ion-label>Cardápio</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="carrinho" href="/tabs/(carrinho:carrinho)">
+      <ion-icon name="cart"></ion-icon>
+      <ion-label>Carrinho</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="menu" href="/tabs/(menu:menu)">
+      <ion-icon name="funnel"></ion-icon>
+      <ion-label>Menu</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

@@ -1,0 +1,199 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Novidades
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openCart()">
+        <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+  <ion-row no-padding class="category-banner">
+    <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+      {{ cat.category }}
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card color="corSecundaria">
+    <img src="./assets/imgs/bolo_encomenda.png"/>
+    <ion-card-content>
+      <ion-card-title class="fonte_title letraBold">
+          Naked Cake de Brownie do Pokemon
+      </ion-card-title>
+      <p> Aos fas de todos as idades do Pokemon!.ncomende seu bolo temático conosco</p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='md-cart'></ion-icon>
+          Compre!
+        </button>
+      </ion-col>
+      <ion-col  class="posicaoShare">
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+<!---->
+
+<!--card 2 -->
+<ion-card color="corSecundaria">
+    <img src="./assets/imgs/brownie_cerveja.png"/>
+    <ion-card-content>
+      <ion-card-title class="fonte_title letraBold">
+        Brownie com cerveja Stout
+      </ion-card-title>
+      <p>Break Brownie incorporou numa versão de brownie da linha Break Bar!<br><br></p>
+      <p>A Cerveja Stout possui coloração escura e forte aroma de café e chocolate. Produzida com
+      malte torrado, tem a espuma bastante cremosa, corpo intenso e elevado amargor.</p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='md-cart'></ion-icon>
+          Compre!
+        </button>
+      </ion-col>
+      <ion-col  class="posicaoShare">
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+<!---->
+
+<!-- card 3 -->
+<ion-card color="corSecundaria">
+    <img src="./assets/imgs/cakebrownie.png"/>
+    <ion-card-content>
+      <ion-card-title class="fonte_title letraBold">
+          Break Brownie em seus eventos!
+      </ion-card-title>
+      <p> Brownies com brigadeiro Gourmet de brownie para eventos! Faça um mimo aos seus convidados, conte com a Break Brownie!!! </p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='md-cart'></ion-icon>
+          Compre!
+        </button>
+      </ion-col>
+      <ion-col  class="posicaoShare">
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+<!-- -->
+
+<!-- card 4 -->
+<ion-card color="corSecundaria">
+    <img src="./assets/imgs/ovobranco_brownie.png"/>
+    <img src="./assets/imgs/brownie_doceleite.png"/>
+    <ion-card-content>
+      <ion-card-title class="fonte_title letraBold">
+          Bem-vindo Páscoa!!
+      </ion-card-title>
+      <p>Dada a largada para Páscoa!!! Ovos de Brownies</p><br/>
+      <p>1KG de ovo branco com recheio de Brownies e biscoito oreo.</p>
+      <p>1KG de Ovo Chocolate com recheio de Doce de Leite Artesanal.</p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='md-cart'></ion-icon>
+          Compre!
+        </button>
+      </ion-col>
+      <ion-col  class="posicaoShare">
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+<!-- -->
+
+<!-- card 5 -->
+<ion-card color="corSecundaria">
+    <img src="./assets/imgs/ovo_coracao.png"/>
+    <ion-card-content>
+      <ion-card-title class="fonte_title letraBold">
+          Presenteie seu Grande Amor!
+      </ion-card-title>
+      <p>De esse presente para quem você mais ama.</p><br/>
+       <p>1KG de Ovo Chocolate com recheio de Doce de Leite Artesanal.</p>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='md-cart'></ion-icon>
+          Compre!
+        </button>
+      </ion-col>
+      <ion-col  class="posicaoShare">
+        <button ion-button clear small color="corBrancaMenu" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+</ion-content>
